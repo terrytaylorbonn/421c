@@ -1,0 +1,13 @@
+name: Use Remote Hello Action
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Use 421b action
+        uses: terrytaylorbonn/421b@v1
+        with:
+          name: External Repo 421c
